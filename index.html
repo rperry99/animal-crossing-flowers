@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="checklist-container">
+      <h1>Animal Crossing: New Horizons Flower Checklist</h1>
+      <div class="garden">
+        <div class="hyacinth flower-name" style="grid-area: H;">Hyacinth</div>
+        <div class="rose flower-name" style="grid-area: R;">Rose</div>
+        <div class="cosmo flower-name" style="grid-area: C;">Cosmo</div>
+        <div class="lilly flower-name" style="grid-area: L;">Lilly</div>
+        <div class="pansy flower-name" style="grid-area: P;">Pansy</div>
+        <div class="windflower flower-name" style="grid-area: W;">
+          Windflower
+        </div>
+        <div class="mum flower-name" style="grid-area: M;">Mum</div>
+        <div class="tulip flower-name" style="grid-area: T;">Tulip</div>
+
+        <!--   Windflowers -->
+        <div class="flower white" id="whiteWind" style="grid-area: WW;"></div>
+        <div class="flower red" id="redWind" style="grid-area: WR;"></div>
+        <div class="flower orange" id="orangeWind" style="grid-area: WO;"></div>
+        <div class="flower pink" id="pinkWind" style="grid-area: WPI;"></div>
+        <div
+          class="flower purple"
+          id="purpleWind"
+          style="grid-area: WPU;"
+        ></div>
+        <div class="flower blue" id="blueWind" style="grid-area: WB;"></div>
+
+        <!--   Hyacinths -->
+        <div class="flower white" id="whiteHya" style="grid-area: HW;"></div>
+        <div class="flower red" id="redHya" style="grid-area: HR;"></div>
+        <div class="flower yellow" id="yellowHya" style="grid-area: HY;"></div>
+        <div class="flower purple" id="purpleHya" style="grid-area: HPU;"></div>
+        <div class="flower orange" id="orangeHya" style="grid-area: HO;"></div>
+        <div class="flower blue" id="blueHya" style="grid-area: HB;"></div>
+        <div class="flower pink" id="pinkHya" style="grid-area: HPI;"></div>
+
+        <!--   Roses -->
+        <div class="flower red" id="redRose" style="grid-area: RR;"></div>
+        <div class="flower yellow" id="yellowRose" style="grid-area: RY;"></div>
+        <div class="flower pink" id="pinkRose" style="grid-area: RPI;"></div>
+        <div class="flower gold" id="goldRose" style="grid-area: RG;"></div>
+        <div class="flower blue" id="blueRose" style="grid-area: RB;"></div>
+        <div class="flower orange" id="orangeRose" style="grid-area: RO;"></div>
+        <div
+          class="flower purple"
+          id="purpleRose"
+          style="grid-area: RPU;"
+        ></div>
+        <div class="flower white" id="whiteRose" style="grid-area: RW;"></div>
+        <div class="flower black" id="blackRose" style="grid-area: RBL;"></div>
+
+        <!--   Mums -->
+        <div class="flower white" id="whiteMum" style="grid-area: MW;"></div>
+        <div class="flower red" id="redMum" style="grid-area: MR;"></div>
+        <div class="flower yellow" id="yellowMum" style="grid-area: MY;"></div>
+        <div class="flower pink" id="pinkMum" style="grid-area: MPI;"></div>
+        <div class="flower purple" id="purpleMum" style="grid-area: MPU;"></div>
+        <div class="flower green" id="greenMum" style="grid-area: MG;"></div>
+
+        <!--   Tulips -->
+        <div class="flower red" id="redTul" style="grid-area: TR;"></div>
+        <div class="flower yellow" id="yellowTul" style="grid-area: TY;"></div>
+        <div class="flower white" id="whiteTul" style="grid-area: TW;"></div>
+        <div class="flower purple" id="purpleTul" style="grid-area: TPU;"></div>
+        <div class="flower pink" id="pinkTul" style="grid-area: TPI;"></div>
+        <div class="flower orange" id="orangeTul" style="grid-area: TO;"></div>
+        <div class="flower black" id="blackTul" style="grid-area: TBL;"></div>
+
+        <!--   Cosmos -->
+        <div class="flower red" id="redCos" style="grid-area: CR;"></div>
+        <div class="flower yellow" id="yellowCos" style="grid-area: CY;"></div>
+        <div class="flower white" id="whiteCos" style="grid-area: CW;"></div>
+        <div class="flower black" id="blackCos" style="grid-area: CBL;"></div>
+        <div class="flower pink" id="pinkCos" style="grid-area: CPI;"></div>
+        <div class="flower orange" id="orangeCos" style="grid-area: CO;"></div>
+
+        <!--   Pansies -->
+        <div class="flower yellow" id="yellowPan" style="grid-area: PY;"></div>
+        <div class="flower white" id="whitePan" style="grid-area: PW;"></div>
+        <div class="flower red" id="redPan" style="grid-area: PR;"></div>
+        <div class="flower orange" id="orangePan" style="grid-area: PO;"></div>
+        <div class="flower blue" id="bluePan" style="grid-area: PB;"></div>
+        <div class="flower purple" id="purplePan" style="grid-area: PPU;"></div>
+
+        <!--   Lillies -->
+        <div class="flower red" id="redLil" style="grid-area: LR;"></div>
+        <div class="flower yellow" id="yellowLil" style="grid-area: LY;"></div>
+        <div class="flower white" id="whiteLil" style="grid-area: LW;"></div>
+        <div class="flower pink" id="pinkLil" style="grid-area: LPI;"></div>
+        <div class="flower orange" id="orangeLil" style="grid-area: LO;"></div>
+        <div class="flower black" id="blackLil" style="grid-area: LBL;"></div>
+      </div>
+    </div>
+    <div class="guide">
+      <div class="roseGuide guideCard">
+        <p>Roses</p>
+        <div class="rows">
+          <div class="row">
+            <div class="guideColor pink"></div>
+            <div>=</div>
+            <div class="guideColor white"></div>
+            <div>+</div>
+            <div class="guideColor red"></div>
+          </div>
+          <div class="row">
+            <div class="guideColor orange"></div>
+            <div>=</div>
+            <div class="guideColor yellow"></div>
+            <div>+</div>
+            <div class="guideColor red"></div>
+          </div>
+          <div class="row">
+            <div class="guideColor black"></div>
+            <div>=</div>
+            <div class="guideColor red"></div>
+            <div>+</div>
+            <div class="guideColor red"></div>
+          </div>
+          <div class="row">
+            <div class="guideColor purple"></div>
+            <div>=</div>
+            <div class="guideColor white"></div>
+            <div>+</div>
+            <div class="guideColor white"></div>
+          </div>
+          <div class="row">
+            <div class="guideColor red" style="text-align: center;">
+              <span>X</span>
+            </div>
+            <div>=</div>
+            <div class="guideColor white"></div>
+            <div>+</div>
+            <div class="guideColor orange"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background: url("https://i.pinimg.com/originals/1e/32/94/1e329407129f8125ac589fa8ad577a22.png");
+  height: 100vh;
+  width: 90vw;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  letter-spacing: 0.3rem;
+}
+.checklist-container {
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3rem 0;
+}
+h1 {
+  color: white;
+  margin-bottom: 3rem;
+  text-align: center;
+  font-size: 3rem;
+  width: 50%;
+}
+.flower-name {
+  color: #333;
+  background: rgba(210, 180, 140, 0.8);
+  padding: 5px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-radius: 10px;
+}
+.flower {
+  text-transform: uppercase;
+  font-weight: bold;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  transition: all 200ms ease;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  height: 20px;
+  width: 20px;
+  font-size: 20px;
+  border-radius: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0;
+  color: #333;
+}
+.flower:hover {
+  cursor: pointer;
+  transform: translateY(2px);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.7);
+}
+
+.flower:active {
+  transform: translateY(4px);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.9);
+}
+.garden {
+  display: grid;
+  background: url("https://s3.amazonaws.com/spoonflower/public/design_thumbnails/0050/6189/rrrdirt_pattern_3x3_shop_thumb.png");
+  padding: 2rem;
+  border-radius: 10px;
+  margin: 0 auto;
+  grid-gap: 1rem;
+  grid-template-areas:
+    "R RW RR RY RO RPI RPU RB RBL .  RG"
+    "H HW HR HY HO HPI HPU HB .   .  ."
+    "W WW WR .  WO WPI WPU WB .   .  ."
+    "T TW TR TY TO TPI TPU .  TBL .  ."
+    "C CW CR CY CO CPI .   .  CBL .  ."
+    "L LW LR LY LO LPI .   .  LBL .  ."
+    "P PW PR PY PO .   PPU PB .   .  ."
+    "M MW MR MY .  MPI MPU .  .   MG .";
+}
+
+.red {
+  background: red;
+}
+.white {
+  background: white;
+}
+.orange {
+  background: orange;
+}
+.pink {
+  background: pink;
+}
+.purple {
+  background: purple;
+}
+.blue {
+  background: blue;
+}
+.yellow {
+  background: yellow;
+}
+.black {
+  background: black;
+  color: white;
+}
+.gold {
+  background: linear-gradient(
+    45deg,
+    rgba(212, 175, 55, 1) 31%,
+    rgba(211, 211, 211, 1) 51%,
+    rgba(212, 175, 55, 1) 69%
+  );
+}
+.green {
+  background: darkgreen;
+}
+.red,
+.purple,
+.blue,
+.black,
+.green {
+  color: #ccc;
+}
+
+.guide {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.guide *,
+.guide * * {
+  padding: 0;
+  margin: 0;
+}
+.guideCard {
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.5rem;
+  color: white;
+  border-left: solid 15px tan;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+.guideCard p {
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+.guideColor {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  font-size: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.row:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.row :not(:last-child) {
+  margin-right: 10px;
+}
+.guideColor span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0;
+  text-align: center;
+  /* border: solid 1px black; */
+}
