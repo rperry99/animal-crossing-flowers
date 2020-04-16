@@ -175,15 +175,22 @@ h1 {
   margin-right: 10px;
 }
 .guideColor span {
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
+  display: block;
+  margin: auto;
   color: white;
-  position: absolute;
+  font-size: 20px;
+  height: 100%;
+  width: 100%;
+  /* position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
   padding: 0;
   text-align: center;
-  /* border: solid 1px black; */
+  border: solid 1px black;
+  /* Tried Margin: auto & display: block / inline-block */
+  /* Tried Display flex */
 }
