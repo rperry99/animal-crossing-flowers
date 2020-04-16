@@ -175,6 +175,7 @@ h1 {
   margin-right: 10px;
 }
 .guideColor span {
+  /* Tried this as an <i> element too */
   /* display: flex;
   justify-content: center;
   align-items: center; */
