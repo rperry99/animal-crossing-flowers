@@ -3,6 +3,7 @@
   padding: 0;
   user-select: none;
   font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
 }
 body {
   background: url("https://i.pinimg.com/originals/1e/32/94/1e329407129f8125ac589fa8ad577a22.png");
@@ -18,12 +19,22 @@ body {
   align-items: center;
   margin: 3rem 0;
 }
-h1 {
+h1,
+h2 {
   color: white;
   margin-bottom: 3rem;
   text-align: center;
   font-size: 3rem;
   width: 50%;
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 2rem auto;
+  border-left: solid 15px tan;
+  border-radius: 10px;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.5);
 }
 .flower-name {
   color: #333;
@@ -191,4 +202,101 @@ h1 {
   background-size: cover;
   border-radius: 0;
   width: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .checklist-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0;
+    width: 100vw;
+  }
+
+  .guide {
+    margin-top: 2rem;
+  }
+
+  .garden {
+    grid-template-areas:
+      "R  R  R  R  R   R   R  R   R  R"
+      "RW RR RY RO RPI RPU RB RBL RG ."
+      "H  H  H  H  H   H   H  H   H  H"
+      "HW HR HY HO HPI HPU HB . . ."
+      "W  W  W  W  W   W   W  W   W  W"
+      "WW WR WO WPI WPU WB . . . ."
+      "T  T  T  T  T   T   T  T   T  T"
+      "TW TR TY TO TPI TPU TBL . . ."
+      "C  C  C  C  C   C   C  C   C  C"
+      "CW CR CY CO CPI CBL . . . ."
+      "L  L  L  L  L   L   L  L   L  L"
+      "LW LR LY LO LPI LBL . . . ."
+      "P  P  P  P  P   P   P  P   P  P"
+      "PW PR PY PO PPU PB .  . .  ."
+      "M  M  M  M  M   M   M  M   M  M"
+      "MW MR MY MPI MPU MG . . . .";
+    width: 95vw;
+    box-sizing: border-box;
+  }
+
+  .flower {
+    width: 25px;
+    height: 25px;
+  }
+
+  h1 {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    box-sizing: border-box;
+    font-size: 2rem;
+  }
+  body {
+    width: 100vw;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .garden {
+    grid-template-areas:
+      "R  R  R  R  R "
+      "RW RR RY RO RPI "
+      "RPU RB RBL RG ."
+      "H  H  H  H  H "
+      "HW HR HY HO HPI "
+      "HPU HB . . ."
+      "W  W  W  W  W  "
+      "WW WR WO WPI WPU "
+      "WB . . . ."
+      "T  T  T  T  T  "
+      "TW TR TY TO TPI "
+      "TPU TBL . . ."
+      "C  C  C  C  C "
+      "CW CR CY CO CPI "
+      "CBL . . . ."
+      "L  L  L  L  L"
+      "LW LR LY LO LPI "
+      "LBL . . . ."
+      "P  P  P  P  P "
+      "PW PR PY PO PPU "
+      "PB .  . .  ."
+      "M  M  M  M  M  "
+      "MW MR MY MPI MPU "
+      "MG . . . .";
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    grid-gap: 1rem 0.5rem;
+    padding: 1rem;
+  }
+
+  h1 {
+    width: 75%;
+    box-sizing: border-box;
+  }
+  h2 {
+    width: 75%;
+    box-sizing: border-box;
+  }
 }
